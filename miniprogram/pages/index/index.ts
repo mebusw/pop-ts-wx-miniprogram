@@ -17,6 +17,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindViewProject() {
+    wx.navigateTo({
+      url: './project'
+    })
+  },
   onLoad() {
     if (app.globalData.userInfo) {
       this.setData!({

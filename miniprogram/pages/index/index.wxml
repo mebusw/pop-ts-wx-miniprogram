@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<!-- 
+- Page首页项目总览project
+  - 新建按钮
+  - 所有项目缩略(复用Com图片缩略九宫格canvas）
+- Page单个项目图片总览gallery
+  - Com图片缩略九宫格
+  - 拖动改变顺序
+  - 删除
+  - 退到上一层
+  - 播放按钮
+- Page拍照后refine
+  - 调整
+  - 存储
+- Page单张图片canvas
+  - 图片显示
+  - Com Link
+  - 显示所有link
+  - 新建link
+  - 拖动link
+  - 弹出popup
+  - 删除link
+  - 退到上一层
+- Page链接图片选择linker
+  - 选择图片(复用Com图片缩略九宫格canvas）
+  - 选择过渡 Slider
+- Page播放器play
+  - A/B buffer(复用Com Link)
+  - 退出和重启
+- 埋点
+-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <button bindtap="bindViewProject">jump to proejct 1</button>
+  </view>
+</view>

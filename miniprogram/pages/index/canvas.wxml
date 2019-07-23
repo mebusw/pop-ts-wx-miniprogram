@@ -1,0 +1,10 @@
+<!--miniprogram/pages/index/canvas.wxml-->
+<text>miniprogram/pages/index/canvas.wxml</text>
+<view>
+  <button bindtap="bindAddLinkTap">add links</button>
+  <button bindtap="bindViewDone">done</button>
+  <image class="pic"></image>
+  <block wx:for="{{links}}">
+    <link></link>
+  </block>
+</view>

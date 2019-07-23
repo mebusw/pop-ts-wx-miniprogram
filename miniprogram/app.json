@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/index/project"
+    "pages/index/project",
+    "pages/index/canvas",
+    "pages/index/play",
+    "pages/index/linker"
   ],
   "window": {
     "backgroundTextStyle": "light",

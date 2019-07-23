@@ -1,0 +1,13 @@
+/* pages/componets/gallery.wxss */
+
+.wire {
+  border: 3px blue solid;
+  
+}
+
+.pic {
+  border: 2px red dotted;
+  height: 150rpx;
+  width: 100rpx;
+  
+}

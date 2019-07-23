@@ -1,0 +1,10 @@
+<!--pages/componets/gallery.wxml-->
+
+<view class="wire">
+  <view>
+    <text>Gallery name is {{name}}</text>
+    <image class="pic" bindtap="bindPicTap"></image>
+    <image class="pic" bindtap="bindPicTap"></image>
+  </view>
+
+</view>

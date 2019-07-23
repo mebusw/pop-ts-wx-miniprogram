@@ -1,0 +1,8 @@
+<!--components/link.wxml-->
+<text>components/link.wxml</text>
+<view class="wire">
+  <text>tap me to link to another pic or delete</text>
+  <view>
+    <text>hidder popup</text>
+  </view>
+</view>

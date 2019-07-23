@@ -1,4 +1,4 @@
-//project.js
+//play.js
 //获取应用实例
 import { IMyApp } from '../../app'
 
@@ -12,21 +12,8 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-
-  bindPlayTap() {
-    wx.navigateTo({
-      url: './play'
-    })
-
-  },
-
-  bindAddTap() {
-    wx.chooseImage({})
+  bindViewDone() {
+    wx.navigateBack({})
   },
   onLoad() {
 

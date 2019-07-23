@@ -1,0 +1,8 @@
+/* miniprogram/pages/index/canvas.wxss */
+
+.pic {
+  border: 2px red dotted;
+  height: 750rpx;
+  width: 500rpx;
+  
+}

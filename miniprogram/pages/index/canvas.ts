@@ -1,4 +1,4 @@
-//project.js
+//canvas.js
 //获取应用实例
 import { IMyApp } from '../../app'
 
@@ -10,24 +10,20 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    links: [{ x: 10, y: 10 }, { x: 20, y: 30 }],
   },
   //事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  bindViewDone() {
+    wx.navigateBack({})
+  },
+
+  bindAddLinkTap(e: any) {
+    console.log(e)
+    this.setData!({
+      links: [{ x: 10, y: 10 }, { x: 20, y: 30 }, { x: 40, y: 30 }]
     })
   },
 
-  bindPlayTap() {
-    wx.navigateTo({
-      url: './play'
-    })
-
-  },
-
-  bindAddTap() {
-    wx.chooseImage({})
-  },
   onLoad() {
 
   },

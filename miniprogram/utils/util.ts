@@ -13,3 +13,23 @@ const formatNumber = (n: number) => {
   const str = n.toString()
   return str[1] ? str : '0' + str
 }
+
+export var prjData = {
+  projects: [
+    {
+      name: '', 
+      content: {
+        pics: [
+          ''
+        ],
+        links: [
+          { srcPic: 0, destPic: 0, x: 0, y: 0, trans: '' }
+        ]
+      },
+    }
+  ],
+}
+
+export function savePrjData(): void {
+  
+}

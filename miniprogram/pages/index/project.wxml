@@ -1,3 +1,7 @@
 <!--miniprogram/pages/index/project.wxml-->
 <text>miniprogram/pages/index/project.wxml</text>
-<canvas name="123"></canvas>
+<gallery name="123"></gallery>
+  <view>
+    <button bindtap="bindAddTap">ADD</button>
+    <button bindtap="bindPlayTap">Play</button>
+  </view>

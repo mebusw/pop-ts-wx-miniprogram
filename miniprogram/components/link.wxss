@@ -1,0 +1,7 @@
+/* components/link.wxss */
+
+.wire {
+  border: 3px blue solid;
+  width: 100rpx;
+  height: 100rpx; 
+}

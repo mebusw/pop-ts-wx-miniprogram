@@ -1,2 +1,3 @@
 <!--miniprogram/pages/index/project.wxml-->
 <text>miniprogram/pages/index/project.wxml</text>
+<canvas name="123"></canvas>

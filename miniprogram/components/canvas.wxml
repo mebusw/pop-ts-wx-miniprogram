@@ -1,10 +1,33 @@
 <!--pages/componets/canvas.wxml-->
 <!-- 
-- 新建
-- 总览
-- 拍照
-- 连接和过渡
-- 播放
-- 退出和重启
+- Page项目总览
+  - 新建按钮
+  - 所有项目缩略(复用Com图片缩略九宫格）
+- Page图片总览
+  - Com图片缩略九宫格
+  - 拖动改变顺序
+  - 删除
+  - 退到上一层
+  - 播放按钮
+- Page拍照
+  - 调整
+  - 存储
+- Page单张图片
+  - 图片显示
+  - Com Link
+  - 显示所有link
+  - 新建link
+  - 拖动link
+  - 连接到另一张(复用Com图片缩略九宫格）
+  - 选择过渡 Slider
+  - 删除link
+  - 退到上一层
+- Page播放器
+  - A/B buffer(复用Com Link)
+  - 退出和重启
+- 埋点
 -->
 <text>pages/componets/canvas.wxml</text>
+<view>
+  <text>My name is {{name}}</text>
+</view>

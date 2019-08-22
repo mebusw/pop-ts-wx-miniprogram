@@ -13,7 +13,7 @@ Page({
   },
   //事件处理函数
   bindViewDone() {
-    wx.navigateBack({})
+    wx.navigateBack({delta: 0})
   },
   onLoad() {
 

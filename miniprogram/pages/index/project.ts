@@ -7,6 +7,7 @@ const app = getApp<IMyApp>()
 Page({
   data: {
     motto: '点击 “编译” 以构建',
+    uploadedPicPath: 'NA',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -26,7 +27,20 @@ Page({
   },
 
   bindAddTap() {
-    wx.chooseImage({})
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: res => {
+        // tempFilePath可以作为img标签的src属性显示图片
+        //const tempFilePaths = res.tempFilePaths
+        console.warn(res.tempFiles)
+        this.setData!({
+          uploadedPicPath: res.tempFiles[0].path
+        })
+      }
+    })
+
   },
   onLoad() {
 

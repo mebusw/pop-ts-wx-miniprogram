@@ -1,7 +1,9 @@
 <!--miniprogram/pages/index/project.wxml-->
 <text>miniprogram/pages/index/project.wxml</text>
 <gallery name="123"></gallery>
-  <view>
-    <button bindtap="bindAddTap">ADD</button>
-    <button bindtap="bindPlayTap">Play</button>
-  </view>
+<view>
+  <button bindtap="bindAddTap">ADD</button>
+  <button bindtap="bindPlayTap">Play</button>
+  <text>Src：  {{uploadedPicPath}}</text>
+  <image src="{{uploadedPicPath}}"></image>
+</view>

@@ -12,6 +12,19 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
+
+  onLoad() {
+    wx.getStorage({
+      key: 'pic0',
+      success: res => {
+        console.log(res.data)
+        this.setData!({
+          uploadedPicPath: res.data
+        }) 
+      }
+    })
+  },
+
   //事件处理函数
   bindViewTap() {
     wx.navigateTo({
@@ -34,17 +47,35 @@ Page({
       success: res => {
         // tempFilePath可以作为img标签的src属性显示图片
         //const tempFilePaths = res.tempFilePaths
-        console.warn(res.tempFiles)
+        console.log(res.tempFiles)
+        
         this.setData!({
           uploadedPicPath: res.tempFiles[0].path
+        }) 
+
+        // wx.compressImage({
+        //   src: res.tempFiles[0].path, // 图片路径
+        //   quality: 60, // 压缩质量
+        // })
+
+        wx.setStorage({
+          key: "pic0",
+          data: res.tempFiles[0].path
         })
+        
+        wx.getStorageInfo({
+          success(res) {
+            console.log(res.keys)
+            console.log(res.currentSize)
+            console.log(res.limitSize)
+          }
+        })
+
       }
     })
 
   },
-  onLoad() {
 
-  },
 
   getUserInfo(e: any) {
     console.log(e)

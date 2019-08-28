@@ -10,7 +10,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    links: [{ x: 10, y: 10 }, { x: 20, y: 30 }],
+    links: [{ x: 10, y: 210 }, { x: 20, y: 230 }],
   },
   //事件处理函数
   bindViewDone() {
@@ -20,7 +20,7 @@ Page({
   bindAddLinkTap(e: any) {
     console.log(e)
     this.setData!({
-      links: [{ x: 10, y: 10 }, { x: 20, y: 30 }, { x: 40, y: 30 }]
+      links: [{ x: 10, y: 210 }, { x: 20, y: 230 }, { x: 40, y: 250 }]
     })
   },
 

@@ -5,6 +5,7 @@
   <button bindtap="bindViewDone">done</button>
   <image class="pic"></image>
   <block wx:for="{{links}}">
-    <link></link>
+    <view ></view>
+    <link style="position:absolute; left:{{item.x}}px; top:{{item.y}}px" paramA="{{index}}"></link>
   </block>
 </view>
